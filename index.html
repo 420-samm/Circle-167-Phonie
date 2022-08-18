@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phonie: AutoDetect Your telecom carrier</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+  <main class="container">
+    <div class="phone-container">
+      <h1 class="heading" id="heading">Enter Phone Number</h1>
+      <hr class="divider">
+      <form action="/" method="post" class="phone-form">
+        <label for="phone-number" class="phone-label"></label>
+        <div class="phone-form-container">
+          <div class="mobile-number-container">
+            <input type="tel" id="phone-number" class="mobile-number" oninput="onChangeEvent()">
+          </div>
+          <div class="hr-divider"></div>
+          <div class="service-provider" id="sp"></div>
+        </div>
+        <button class=submit-button id="submit-button">Submit</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>
