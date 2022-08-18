@@ -37,16 +37,22 @@ function startApp() {
   img.style.margin = "4px 4px 0px 0px"
   let block = document.getElementById("sp")
 
-  function onChangeEvent() {
-    let phoneNumber = document.getElementById("phone-number").value;
-    let x = document.getElementById("phone-number")
+  const x = document.querySelector("input")
 
+  x.oninput = getCarrier;
 
-    if (phoneNumber.startsWith("+234")) {
-      x.maxLength = "14"
+  function validateInput(input) {
+    if (input.startsWith("+234")) {
+      x.maxLength = "14";
     } else {
-      x.maxLength = "11"
+      x.maxLength = "11";
     }
+  }
+
+  function getCarrier() {
+    let phoneNumber = document.getElementById("phone-number").value;
+
+    validateInput(phoneNumber);
 
     for (let i = 0; i < numberPrefixes.length; i++) {
       for (let j = 0; j < numberPrefixes[i].length; j++) {
