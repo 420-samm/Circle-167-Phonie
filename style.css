@@ -8,7 +8,7 @@
 }
 
 html {
-    height: 100vh;
+    height: 100%;
     font-family: 'Lato', Arial, sans-serif;
     background-color: #8BC6EC;
     background: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%) no-repeat center center;
