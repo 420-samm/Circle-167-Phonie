@@ -9,9 +9,10 @@
 
 body {
     font-family: 'Lato', Arial, sans-serif;
-    height: 100vh;
     background-color: #8BC6EC;
     background: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%) no-repeat center center;
+    /* background-size: ; */
+    min-height: 100vh;
     margin-bottom: 0;
 }
 
