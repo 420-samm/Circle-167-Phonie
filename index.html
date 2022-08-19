@@ -6,26 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Phonie: AutoDetect Your telecom carrier</title>
-
   <link rel="stylesheet" href="style.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
-
 <body>
   <main class="container">
-    <div class="phone-container">
-      <h1 class="heading" id="heading">Enter Phone Number</h1>
-      <hr class="divider">
-      <form action="/" method="post" class="phone-form">
-        <label for="phone-number" class="phone-label"></label>
-        <div class="phone-form-container">
-          <div class="mobile-number-container">
-            <input type="tel" id="phone-number" class="mobile-number">
+    <nav>
+      <div class="logo">
+        <h2>Phonie</h2>
+        <i class="fi fi-rr-phone-call"></i>
+      </div>
+    </nav>
+    <div class="homepage-flex">
+      <section class="what-it-does">
+        <h2>What It Does</h2>
+        <p>Phonie is a program that automatically detects the telecom carrier of a Nigerian phone number with ease.</p>
+        <p>Start by entering the number in the box provided:</p>
+      </section>
+
+      <div class="phone-container">
+        <form action="/" method="post" class="phone-form">
+          <label for="Phone Number">Enter Phone Number</label>
+          <div class="phone-form-container">
+            <div class="mobile-number-container">
+              <input type="tel" id="phone-number" class="mobile-number">
+            </div>
+            <div class="hr-divider"></div>
+            <div class="service-provider" id="sp"></div>
           </div>
-          <div class="hr-divider"></div>
-          <div class="service-provider" id="sp"></div>
-        </div>
-        <button class=submit-button id="submit-button">Submit</button>
-      </form>
+          <button class=submit-button id="submit-button">Submit</button>
+        </form>
+      </div>
     </div>
   </main>
 
